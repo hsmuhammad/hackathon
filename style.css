@@ -86,7 +86,7 @@ border-left: 2px solid #135EAC1F;
   padding-top: 50px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(186, 174, 174);
-  background-color: #fff; /* ensure border visible */
+  background-color: #fff; 
 }
 
 
@@ -111,23 +111,23 @@ margin: 0 auto;
   margin-bottom: 40px;
 }
 
-/* each box: center contents vertically & horizontally */
+
 .section2_box {
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* center vertically inside the col */
-  align-items: center;      /* center horizontally */
-  text-align: center;       /* center text lines */
+  justify-content: center; 
+  align-items: center;      
+  text-align: center;       
   gap: 12px;
   padding: 20px;
-  /* optional visual styling */
+ 
   background: transparent;
   border-radius: 6px;
-  /* keep equal heights if you want */
+  
   min-height: 240px;
 }
 
-/* icon box */
+
 .section2_imgbox {
   background-color: rgba(236, 245, 255, 1);
   width: 140px;
@@ -139,14 +139,14 @@ margin: 0 auto;
   align-items: center;
 }
 
-/* image responsive */
+
 .section2_imgbox img {
   max-width: 70%;
   height: auto;
   display: block;
 }
 
-/* heading style */
+
 .section2_box h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -154,13 +154,13 @@ margin: 0 auto;
   margin: 0;
 }
 
-/* paragraph style */
+
 .section2_box p {
   margin: 0;
   color: #666;
 }
 
-/* Small-screen tweak: reduce min-height for better stacking */
+
 @media (max-width: 575.98px) {
   .section2_box {
     min-height: 0;
@@ -184,7 +184,7 @@ margin: 0 auto;
 
 .slide {
   flex: 0 0 auto;
-  width: calc(100% / 6); /* show 6 logos at once */
+  width: calc(100% / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,10 +206,8 @@ margin: 0 auto;
   }
 }
 
-/* Basic reset you may already have */
-* { box-sizing: border-box; }
 
-/* Parent two-column wrapper */
+
 .two-col-wrap {
   display: flex;
   gap: 30px;
@@ -220,42 +218,39 @@ margin: 0 auto;
   padding: 40px 16px;
 }
 
-/* LEFT column: background image */
+
+
 .left-col {
-  flex: 0 0 40%; /* 40% width */
-  min-width: 260px;
-  border-radius: 8px;
-  background-image: url('./images/section3/Vector.png) /* replace */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  flex: 0 0 40%;                
+  min-width: 260px;            
+  max-width: 480px;            
   position: relative;
-  overflow hidden;
+  overflow: hidden;             
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* inner image sits on right */
-  padding: 16px;
+  justify-content: center;
+  padding: 12px;
 }
 
-/* small inner image on right side */
+
 .left-inner-img {
-  max-width: 55%;
+  max-width: 100%;
   height: auto;
   display: block;
-  /* subtle shadow */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-  border-radius: 6px;
+  object-fit: contain;
 }
 
-/* RIGHT column: stacked content */
-.right-col {
-  flex: 1 1 60%;
+
+ .right-col {
+  flex: 1 1 55%;
+  min-width: 320px;             
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding: 0 6px;
 }
 
-/* Top H1 block with background and padding */
+
 .top-block {
   background: linear-gradient(90deg,#f2fbff,#eaf6ff); /* change to your color */
   padding: 20px;
@@ -271,14 +266,14 @@ margin: 0 auto;
   color: #0b3b66;
 }
 
-/* Vectors container — vertical stack */
+
 .vectors {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Single vector item row */
+
 .vector-item {
   display: flex;
   gap: 12px;
@@ -289,9 +284,9 @@ margin: 0 auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
 
-/* Icon / small background box on left of vector */
+
 .vector-icon {
-  background: rgba(236,245,255,1); /* colored padded background */
+  background: rgba(236,245,255,1);
   padding: 10px;
   border-radius: 8px;
   display: flex;
@@ -323,7 +318,7 @@ margin: 0 auto;
   font-size: 14px;
 }
 
-/* Responsive: stack columns on small screens */
+
 @media (max-width: 900px) {
   .two-col-wrap {
     flex-direction: column;
