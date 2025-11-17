@@ -285,7 +285,8 @@ margin: 0 auto;
 }
 
 
-.vector-icon {
+.vector-icon
+{
   background: rgba(236,245,255,1);
   padding: 10px;
   border-radius: 8px;
@@ -298,7 +299,7 @@ margin: 0 auto;
 
 /* icon image sizing */
 .vector-icon img {
-  width: 36px;
+  width: 18px;
   height: auto;
   display: block;
 }
@@ -311,7 +312,7 @@ margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
 
-.vector-text p {
+.vector-text,.vector-text_f p {
   margin: 0;
   color: #555;
   line-height: 1.3;
@@ -334,8 +335,11 @@ margin: 0 auto;
   .right-col { order: 2; width: 100%; }
 }
 
-
-
+.footer-section {
+    background: #051C34;
+    color: #dbe4ef;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
