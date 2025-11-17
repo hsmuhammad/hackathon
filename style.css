@@ -1,0 +1,347 @@
+@import url(./typography/typography.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+  --primary-color:#1572D3;
+}
+.home {
+    background: url(./images/Frame.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    height: 780px;
+    border-bottom: 1px solid rgb(186, 174, 174);
+    border-radius: 5px;
+
+
+}
+.nav li{
+  cursor: pointer;
+  color: black;
+
+}
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+.signup{
+    background-color: #1572D3;
+    border-color: #1572D3;
+    border-radius: 12px;
+    padding: 8px 25px 8px 25px;
+}
+
+.section1 {
+    background: url(./images/car_2_1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 500px;
+}
+.vector1{
+
+  position: absolute;
+  left: 355px;
+  top: 315px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.p1{
+    margin-top: 20px;
+}
+
+.section1_bottom{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 10px;
+    box-shadow: 0px 6px 12px 0px #135EAC1F;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.search{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 8px 50px 8px 50px;
+  border-radius: 8px;
+  
+}
+
+
+.p_date, .r_date{
+border-left: 2px solid #135EAC1F;
+}
+
+.img_location, .img_calender{
+  padding-left: 20px;
+}
+
+.section2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(186, 174, 174);
+  background-color: #fff; /* ensure border visible */
+}
+
+
+.how_it_work{
+  margin: 0 auto;
+  background-color: rgba(21, 114, 211, 0.1);
+  padding: 15px 32px 15px 32px;
+  border-radius: 5px;
+}
+.how_it_work>p{
+  color: var(--primary-color);
+/* text-align: center; */
+margin: 0 auto;
+}
+.section2_h1{
+  margin-top: 10px;
+}
+
+.section2_mid {
+  margin: 0 auto;
+  padding: 2rem 0;
+  margin-bottom: 40px;
+}
+
+/* each box: center contents vertically & horizontally */
+.section2_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* center vertically inside the col */
+  align-items: center;      /* center horizontally */
+  text-align: center;       /* center text lines */
+  gap: 12px;
+  padding: 20px;
+  /* optional visual styling */
+  background: transparent;
+  border-radius: 6px;
+  /* keep equal heights if you want */
+  min-height: 240px;
+}
+
+/* icon box */
+.section2_imgbox {
+  background-color: rgba(236, 245, 255, 1);
+  width: 140px;
+  height: 150px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image responsive */
+.section2_imgbox img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+
+/* heading style */
+.section2_box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* paragraph style */
+.section2_box p {
+  margin: 0;
+  color: #666;
+}
+
+/* Small-screen tweak: reduce min-height for better stacking */
+@media (max-width: 575.98px) {
+  .section2_box {
+    min-height: 0;
+    padding: 16px;
+  }
+}
+
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* padding: 10px 0; */
+  margin-top: 20px;
+}
+
+.logo-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: calc(100% / 6); /* show 6 logos at once */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0.9);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Basic reset you may already have */
+* { box-sizing: border-box; }
+
+/* Parent two-column wrapper */
+.two-col-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+/* LEFT column: background image */
+.left-col {
+  flex: 0 0 40%; /* 40% width */
+  min-width: 260px;
+  border-radius: 8px;
+  background-image: url('./images/section3/Vector.png) /* replace */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* inner image sits on right */
+  padding: 16px;
+}
+
+/* small inner image on right side */
+.left-inner-img {
+  max-width: 55%;
+  height: auto;
+  display: block;
+  /* subtle shadow */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  border-radius: 6px;
+}
+
+/* RIGHT column: stacked content */
+.right-col {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Top H1 block with background and padding */
+.top-block {
+  background: linear-gradient(90deg,#f2fbff,#eaf6ff); /* change to your color */
+  padding: 20px;
+  border-radius: 8px;
+  align-self: stretch;
+}
+
+.top-block h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #0b3b66;
+}
+
+/* Vectors container — vertical stack */
+.vectors {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Single vector item row */
+.vector-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff; /* item background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* Icon / small background box on left of vector */
+.vector-icon {
+  background: rgba(236,245,255,1); /* colored padded background */
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+/* icon image sizing */
+.vector-icon img {
+  width: 36px;
+  height: auto;
+  display: block;
+}
+
+/* text */
+.vector-text h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.vector-text p {
+  margin: 0;
+  color: #555;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .two-col-wrap {
+    flex-direction: column;
+    padding: 24px 12px;
+  }
+  .left-col {
+    order: 1;
+    flex: none;
+    width: 100%;
+    min-height: 220px;
+    justify-content: center;
+  }
+  .right-col { order: 2; width: 100%; }
+}
+
+
+
+
+
+
+ 
