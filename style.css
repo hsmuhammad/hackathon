@@ -101,17 +101,19 @@
 }
 
 .vector1{
-
   position: absolute;
   left: 325px;
   top: 330px;
   cursor: pointer;
   z-index: 10;
 }
+
 @media (max-width:975px){
   .vector1{
     display: none;
   }
+  
+}
 
 @media (max-width: 991px) {
   .car-hero {
