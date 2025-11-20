@@ -37,6 +37,13 @@
 
 }
 
+@media (max-width: 576px) {
+    .p1 {
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
 .nav li,
 .signin {
     font-family: "Poppins", sans-serif;
@@ -46,36 +53,56 @@
 
 }
 
-.how_it_work>p, .popular_rental_detals>p{
+.how_it_work>p,
+.popular_rental_detals>p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
 }
 
-.section2_h1>h1, .section3_h1>h1{
+.section2_h1>h1,
+.section3_h1>h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 44px;
 }
-.rating{
-font-family: "Poppins", Helvetica;
-font-weight: 600;
-font-style: Medium;
-font-size: 12px;
 
-line-height: 17px;
-letter-spacing: 0%;
+@media (max-width: 576px) {
+
+    .section2_h1>h1,
+    .section3_h1>h1 {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+
+    }
 
 }
-.reviews{
-font-family: "Poppins", Helvetica;
-font-weight: 400;
-font-style: normal;
-font-size: 12px;
 
-line-height: 17px;
-letter-spacing: 0%;
+
+
+
+
+.rating {
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-style: Medium;
+    font-size: 12px;
+
+    line-height: 17px;
+    letter-spacing: 0%;
+
+}
+
+.reviews {
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+    line-height: 17px;
+    letter-spacing: 0%;
 
 }
