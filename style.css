@@ -64,6 +64,7 @@
 }
 
 
+
 @media (max-width: 576px) {
   .find_h1 {
     font-size: 1.6rem;
@@ -73,7 +74,9 @@
     height: 40px;
   }
 }
-
+.yusha{
+  padding: 80px 0;
+}
 
 .section1 {
   position: relative;
